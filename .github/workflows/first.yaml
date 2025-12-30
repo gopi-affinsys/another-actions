@@ -32,5 +32,3 @@ jobs:
     steps:
       - name: second
         run: echo "hello world from second job, first job is completed"
-      - name: test env for second
-        run: echo "${{env.first}} $last $FIRST $NUMBER ${{GITHUB_ACTION}}"
