@@ -26,8 +26,6 @@ jobs:
         run: echo "byeeeeeeeeeeeee"
       - name: test env
         run: echo "${{env.first}} $last $FIRST $NUMBER"
-      - name: info
-        run: nproc && free -h && df -h
   second:
     needs: ['first']
     runs-on: ubuntu-latest
