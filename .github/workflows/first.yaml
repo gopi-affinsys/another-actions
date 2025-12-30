@@ -7,7 +7,8 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
-        
+      - name: python setup
+        uses: actions/setup-python@v6.1.0
       - name: echo hello world
         run: echo "hello world" && ls -ltra
       - name: git status
