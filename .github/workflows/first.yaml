@@ -1,0 +1,21 @@
+on:
+  push:
+    branches: [main]
+jobs:
+  first:
+    runs-on: ubuntu
+    steps:
+      - name: echo hello world
+        run: echo "hello world" && ls -ltra
+      - name: git status
+        run: git status
+      - name: update packages
+        run: sudo apt update 
+      - name: bye
+        run: echo "byeeeeeeeeeeeee"
+  second:
+    needs: ['first']
+    runs-on: ubuntu-latest
+    steps:
+      - name: second
+        run: echo "hello world from second job, first job is completed"
