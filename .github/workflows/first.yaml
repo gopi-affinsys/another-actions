@@ -25,7 +25,7 @@ jobs:
       - name: bye
         run: echo "byeeeeeeeeeeeee"
       - name: test env
-        run: echo "${{first}} $last $FIRST $NUMBER"
+        run: echo "${{env.first}} $last $FIRST $NUMBER"
   second:
     needs: ['first']
     runs-on: ubuntu-latest
