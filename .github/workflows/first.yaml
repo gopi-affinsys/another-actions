@@ -4,7 +4,7 @@ on:
 env:
     first: gopi
     last: krishna
-    First: another-gopi
+    FirSt: another-gopi
     NUMBER: 90
 jobs:
   first:
